@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title> Blog </title>
+ <link rel="stylesheet" href="style.css">
+
+ <!-- google fonts -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@100;200;300;400;600;700&family=Roboto:ital,wght@0,500;0,700;1,400&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+ <!-- Heder section stert here -->
+       <section class="sub-header">
+        <!-- Nav section start here -->
+               <nav>
+                  <a href="index.html"> <img src="img/logo.png"> </a>
+                  <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"> </i>
+                      <ul>
+                        <li> <a href="index.html"> HOME </a> </li>
+                        <li> <a href="about.html"> ABOUT </a> </li>
+                        <li> <a href="course.html"> COURSE </a></li>
+                        <li> <a href="blog.html"> BLOG </a></li>
+                        <li> <a href="contact.html"> CONTACT US </a> </li>
+                      </ul> 
+                  </div>
+                  <i class="fa fa-bars" onclick="showMenu()"> </i>
+               </nav>
+               <!-- Nav Section End here -->
+               <h1> Our Certificate & Online Programs For 2021 </h1>
+               </section>
+
+               <!-- Blog Page Content  -->
+
+             <section class="blog-content">
+                 <div class="row">
+                     <div class="blog-left">
+                         <img src="./img/certificate.jpg" alt="">
+                         <h2> Our Certificate & Online Programs For 2021 </h2>
+                         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, laboriosam vitae consequatur nam labore eligendi corporis illum sapiente at asperiores. Excepturi minima laboriosam distinctio assumenda? Tenetur saepe illum facere quisquam, eligendi autem. Veniam, totam dicta, rerum minus commodi ex, suscipit ullam ipsa deserunt impedit laboriosam aliquam! Unde cumque corrupti placeat!</p> <br>
+
+                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti aspernatur dolor sunt fugiat molestias! Aspernatur cumque sed incidunt, ut laudantium dolores at, fugit nulla inventore obcaecati velit dignissimos vel ipsa neque vero facere expedita quas voluptas quod quasi sint explicabo commodi? Fugit aspernatur, deserunt velit sed molestiae tenetur incidunt dolorum? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam nam obcaecati dolores earum esse soluta dolore, doloribus sed quia laudantium quibusdam veritatis quo, quas nostrum? Exercitationem aut omnis molestiae magnam.</p> <br>
+
+                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque tempore possimus quo sed et libero, eius omnis officiis deserunt unde cum, dolorum qui? Necessitatibus, voluptates temporibus quo vel cum quae dicta ratione, voluptate dolore voluptatem accusamus ipsa amet, nisi aperiam reiciendis! Sint nobis numquam, illum itaque perferendis illo alias facere?</p>
+
+                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque tempore possimus quo sed et libero, eius omnis officiis deserunt unde cum, dolorum qui? Necessitatibus, voluptates temporibus quo vel cum quae dicta ratione, voluptate dolore voluptatem accusamus ipsa amet, nisi aperiam reiciendis! Sint nobis numquam, illum itaque perferendis illo alias facere?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam recusandae, culpa cupiditate accusantium labore aliquid placeat illum porro delectus numquam.</p>
+
+
+                         <div class="comment-box">
+                             <h3> Leave a comment </h3>
+
+                             <form class="comment-form">
+                                  <input type="text" placeholder="Enter Name">
+                                  <input type="email" placeholder="Enter Email">
+                                  <textarea rows="5" placeholder="Your Comment"></textarea>
+                                  <button type="submit" class="hero-btn red-btn"> POST COMMENT </button>
+                             </form>
+                         </div>
+
+
+                     </div>
+                     <div class="blog-right">
+                         <h3> Post Categories </h3>
+                         <div>
+                             <span> Business Analytics </span>
+                             <span> 22 </span>
+                         </div>
+                         <div>
+                            <span> Data Scince </span>
+                            <span> 23 </span>
+                        </div>
+                        <div>
+                            <span> Sports News </span>
+                            <span> 24 </span>
+                        </div>
+                        <div>
+                            <span> Machine Learnning </span>
+                            <span> 25 </span>
+                        </div>
+                        <div>
+                            <span> Bolg Chine  </span>
+                            <span> 26 </span>
+                        </div>
+                        <div>
+                            <span> Algoretham dev </span>
+                            <span> 27 </span>
+                        </div>
+                        <div>
+                            <span> Magagine  </span>
+                            <span> 28 </span>
+                        </div>
+                     </div>
+                 </div>
+             </section>
+
+
+        <!--------------- Footer----------------- -->
+        <section class="footer">
+            <h4> About Us </h4>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, consectetur assumenda, blanditiis adipisci <br>nisi excepturi deleniti aspernatur consequatur alias laborum deserunt porro voluptate! In, adipisci?</p>
+            <div class="icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-linkedin"></i>
+            </div>
+            <p> Develop by <i class="fa fa-heart-o"></i> Ibrahim Khan Naib </p>
+        </section>
+
+
+        <!-- JavaScript Section -->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+        </script>
+        </body>
+        </html>
